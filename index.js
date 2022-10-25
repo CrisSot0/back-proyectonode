@@ -15,8 +15,8 @@ app.use(bodyparser.json())
 // Conexion a la base de datos
 
 //Conexion a la base de datos
-console.log(process.env)
-const uri = `mongodb+srv://${process.env.USUARIO}:${process.env.PASSWORD}@cluster0.tq1hgll.mongodb.net/${process.env.DBNAME}?retryWrites=true&w=majority`
+//console.log(process.env.USERNAME,process.env.PASSWORD,process.env.DBNAME)
+const uri = `mongodb+srv://criztian:hola@cluster0.tq1hgll.mongodb.net/ust?retryWrites=true&w=majority`
 mongoose.connect(uri, {
     useNewUrlParser: true,
     useUnifiedTopology: true
